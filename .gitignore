@@ -1,6 +1,5 @@
 # Prerequisites
 *.d
-*.ipch
 
 # Compiled Object files
 *.slo
@@ -31,3 +30,4 @@
 *.exe
 *.out
 *.app
+*.ipch
