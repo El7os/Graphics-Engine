@@ -1,7 +1,5 @@
 #include "Screen.h"
-
-#include <Windows.h>
-#include <gl/GL.h>
+#include "glad.h"
 
 bool Screen::Initialize(std::string Title
 	, ColorDepth Depth
@@ -36,6 +34,14 @@ bool Screen::Initialize(std::string Title
 		return false;
 	}
 	
+	if (!gladLoadGL()) // Load OpenGL
+	{
+		SDL_GL_DeleteContext(Context);
+		SDL_DestroyWindow(Window);
+		SDL_Quit();
+		return false;
+	}
+
 	return true;
 }
 

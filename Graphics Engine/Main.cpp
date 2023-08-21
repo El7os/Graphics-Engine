@@ -1,8 +1,6 @@
 #include <iostream>
-#include <Windows.h>
-#include <SDL.h>
-#include <gl/GL.h>
 
+#include <SDL.h>
 #include "Screen.h"
 #include "Input.h"
 
